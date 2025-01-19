@@ -1,0 +1,38 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"ts_ground",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":3,
+    "SerialiseWidth":2,
+    "TileSerialiseData":[1,0,27,28,38,11,],
+  },
+  "name":"ts_ground",
+  "out_columns":8,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Conjuntos de casillas",
+    "path":"folders/Conjuntos de casillas.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"FullTerrainTileSet",
+    "path":"sprites/FullTerrainTileSet/FullTerrainTileSet.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":55,
+  "tilehsep":2,
+  "tilevsep":0,
+  "tileWidth":58,
+  "tilexoff":25,
+  "tileyoff":30,
+  "tile_count":54,
+}
