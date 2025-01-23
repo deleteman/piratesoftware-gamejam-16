@@ -47,8 +47,5 @@ if (global.controlled_object == id) {
 	// Apply vertical speed
 	
 }
-	show_debug_message("NPC FLOOR: {0}", floor_below);
-	show_debug_message("NPC H SPEED: {0}", hspd);
-	show_debug_message("NPC ON GROUND:{0}", on_ground);
-
+	
 	y += vertical_speed;
