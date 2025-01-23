@@ -34,6 +34,8 @@
   },
   "name":"The Relic's Will",
   "resources":[
+    {"id":{"name":"obj_caballero","path":"objects/obj_caballero/obj_caballero.yy",},},
+    {"id":{"name":"Obj_demonio","path":"objects/Obj_demonio/Obj_demonio.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_relic","path":"objects/obj_relic/obj_relic.yy",},},
