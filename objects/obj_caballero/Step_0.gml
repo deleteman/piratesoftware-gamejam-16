@@ -1,4 +1,4 @@
-
+/// @description movimiento
 event_inherited(); // Runs the parent's Step event
 
 var hwidth = sprite_width / 2;
@@ -36,4 +36,4 @@ if(!controlled and on_ground) {
 	if(direcction == 1) {
 		x += move_speed;
 	}
-} 
+}
