@@ -1,6 +1,6 @@
 if (attached_object != noone) {
     attached_object.x = x; // Keep the initial object attached to the NPC
-    attached_object.y = y - sprite_height; // Adjust for position
+    attached_object.y = y - sprite_height / 2; // Adjust for position
 }
 
 var hspd = keyboard_check(vk_left) - keyboard_check(vk_right);
