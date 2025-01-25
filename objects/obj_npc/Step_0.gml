@@ -10,6 +10,10 @@ if(!on_ground) {
 	vertical_speed += grv;
 }
 
+if(vida_total <= 0) {
+	instance_destroy(self);
+}
+
 // Limit fall speed
 if (vertical_speed > max_fall_speed) {
 	vertical_speed = max_fall_speed;
@@ -27,8 +31,13 @@ if (floor_below) {
 	on_ground = false;
 }
 
+if(empujado) {
+	vertical_speed = -10;
+	empujado = false;
+	flicker_timer = game_get_speed(gamespeed_fps);
+}
 
-if (controlled) {
+if (controlled) { //si lo controlamos nosotros
 
 	// Horizontal movement
 	if (keyboard_check(vk_left)) {

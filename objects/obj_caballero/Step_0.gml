@@ -36,4 +36,6 @@ if(!controlled and on_ground) {
 	if(direcction == 1) {
 		x += move_speed;
 	}
+	
+	
 }
