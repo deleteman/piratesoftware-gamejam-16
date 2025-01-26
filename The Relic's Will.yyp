@@ -71,8 +71,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"felipe","path":"rooms/felipe/felipe.yy",},},
-    {"roomId":{"name":"testpantalla_inicio","path":"rooms/testpantalla_inicio/testpantalla_inicio.yy",},},
     {"roomId":{"name":"testSala","path":"rooms/testSala/testSala.yy",},},
+    {"roomId":{"name":"testpantalla_inicio","path":"rooms/testpantalla_inicio/testpantalla_inicio.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "templateType":"game",

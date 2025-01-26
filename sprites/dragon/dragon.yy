@@ -3,7 +3,7 @@
   "%Name":"dragon",
   "bboxMode":0,
   "bbox_bottom":58,
-  "bbox_left":10,
+  "bbox_left":8,
   "bbox_right":63,
   "bbox_top":11,
   "collisionKind":1,
