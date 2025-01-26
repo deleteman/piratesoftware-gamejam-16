@@ -54,6 +54,7 @@
     {"id":{"name":"fondo_piedra","path":"sprites/fondo_piedra/fondo_piedra.yy",},},
     {"id":{"name":"FullTerrainTileSet","path":"sprites/FullTerrainTileSet/FullTerrainTileSet.yy",},},
     {"id":{"name":"pantalla_de_carga","path":"sprites/pantalla_de_carga/pantalla_de_carga.yy",},},
+    {"id":{"name":"piedra","path":"sprites/piedra/piedra.yy",},},
     {"id":{"name":"Piso2","path":"sprites/Piso2/Piso2.yy",},},
     {"id":{"name":"slime","path":"sprites/slime/slime.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
