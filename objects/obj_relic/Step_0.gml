@@ -22,6 +22,8 @@ if (floor_below) {
 	on_ground = false;
 }
 
+
+
 if (global.controlled_object == id) {
 
 	// Horizontal movement
@@ -42,10 +44,26 @@ if (global.controlled_object == id) {
 	    vertical_speed = jump_strength;
 	    on_ground = false;
 	}
-
-
-	// Apply vertical speed
+	image_speed = 0;
 	
+} else { //si no estamos controlando a la espada directamente
+
+	// Initialize the animation speed (frames per step)
+	var animation_speed = 1; // Play all frames in 1 second
+
+	// Check if spacebar is pressed
+	if (keyboard_check_pressed(vk_enter)) { //attack!
+	    image_speed = animation_speed; // Start animating
+		atacando = true;
+	}
+
+	// Check if the animation has completed
+	if (image_index >= sprite_get_number(sprite_index) - 1 && image_speed > 0) {
+	    image_speed = 0;         // Stop the animation
+	    image_index = 0;         // Reset to the first frame
+		atacando = false;
+	}
 }
+	
 	
 	y += vertical_speed;
