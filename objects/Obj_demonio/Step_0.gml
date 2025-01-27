@@ -1,9 +1,41 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
-if distance_to_object(obj_relic) < 120
- {
-	 if point_direction(x,y,obj_relic.x,obj_relic.y)>360 &&  point_direction(x,y, obj_relic.x, obj_relic.y)>360
-	 {
-		 move_towards_point(obj_relic.x,obj_relic.y,6);
-	 }
- }
+/// @description movimiento
+event_inherited(); // Runs the parent's Step event
+
+var hwidth = sprite_width / 2;
+var hheight = sprite_height / 2;
+
+if(!controlled and on_ground) {
+	
+	if direcction = 1{
+	  sprite_index = demonio;
+	  image_speed =0.3;
+	  image_xscale = 1;	
+	}else{
+	  sprite_index = demonio;
+	  image_speed =0.3;
+	  image_xscale = -1;
+	}
+	
+	switch(estado) {
+		case "patrol": {
+			
+			if(collision_point(x +1, y-hheight, obj_terrain, false, false) and direcction == 1) {
+				direcction = 0;
+			}
+	
+			if(collision_point(x - 1, y - hheight, obj_terrain, false, false) and direcction == 0) {
+				direcction = 1;
+			}
+	
+	
+			if(direcction == 0) {
+				x -= move_speed;
+			}
+			if(direcction == 1) {
+				x += move_speed;
+			}
+			break;
+		}
+	}
+	
+}
