@@ -1,4 +1,4 @@
-/// @description Inserte aquí la descripción
+
 event_inherited(); // Runs the parent's Step event
 
 var hwidth = sprite_width / 2;
@@ -7,11 +7,11 @@ var hheight = sprite_height / 2;
 if(!controlled and on_ground) {
 	
 	if direcction = 1{
-	  sprite_index = demonio;
+	  sprite_index = slime;
 	  image_speed =0.3;
 	  image_xscale = 1;	
 	}else{
-	  sprite_index = demonio;
+	  sprite_index = slime;
 	  image_speed =0.3;
 	  image_xscale = -1;
 	}
