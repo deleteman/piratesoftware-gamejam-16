@@ -1,4 +1,4 @@
-/// @description Inserte aquí la descripción
+/// @description movimiento
 event_inherited(); // Runs the parent's Step event
 
 var hwidth = sprite_width / 2;
@@ -16,24 +16,26 @@ if(!controlled and on_ground) {
 	  image_xscale = -1;
 	}
 	
-
-	//deteccion de parametros de colision
-	//Le restamos la mitad del alto a la "Y" para que no colisinemos con el suelo 
-	if (place_meeting(x + hwidth +move_speed,y - hheight, obj_terrain) and direcction == 1){
-	 direcction = 0;
-	 show_debug_message("COLLISION CON PARED ADELANTE!");
-	}
-
-	if(place_meeting(x- hwidth - move_speed,y - hheight, obj_terrain) and direcction == 0){
-	 direcction = 1;	 
-	 show_debug_message("COLLISION CON PARED ATRAS!");
-
+	switch(estado) {
+		case "patrol": {
+			
+			if(collision_point(x +1, y-hheight, obj_terrain, false, false) and direcction == 1) {
+				direcction = 0;
+			}
+	
+			if(collision_point(x - 1, y - hheight, obj_terrain, false, false) and direcction == 0) {
+				direcction = 1;
+			}
+	
+	
+			if(direcction == 0) {
+				x -= move_speed;
+			}
+			if(direcction == 1) {
+				x += move_speed;
+			}
+			break;
+		}
 	}
 	
-	if(direcction == 0) {
-		x -= move_speed;
-	}
-	if(direcction == 1) {
-		x += move_speed;
-	}
 }

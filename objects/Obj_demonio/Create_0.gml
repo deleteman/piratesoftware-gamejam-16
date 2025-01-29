@@ -1,3 +1,9 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
-direcction = 0;
+
+//variables
+event_inherited(); // Call the parent's Create event to initialize variables
+
+SWRD_DMG_HIGH = 20;
+SWRD_DMG_LOW = 10;
+direcction = 1;
+ORIGINAL_MOVE_SPEED = 2;
+move_speed = ORIGINAL_MOVE_SPEED;
