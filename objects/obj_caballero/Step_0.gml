@@ -5,7 +5,6 @@ var hwidth = sprite_width / 2;
 var hheight = sprite_height / 2;
 
 if(!controlled and on_ground) {
-	//show_debug_message("MOVING ALONE!");
 	
 	if direcction = 1{
 	  sprite_index = caballero;
@@ -18,7 +17,8 @@ if(!controlled and on_ground) {
 	}
 	
 	switch(estado) {
-		case "patrol": {			
+		case "patrol": {
+			
 			if(collision_point(x +1, y-hheight, obj_terrain, false, false) and direcction == 1) {
 				direcction = 0;
 			}
@@ -37,6 +37,5 @@ if(!controlled and on_ground) {
 			break;
 		}
 	}
-	
 	
 }
