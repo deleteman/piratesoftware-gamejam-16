@@ -40,6 +40,7 @@
     {"id":{"name":"obj_caballero","path":"objects/obj_caballero/obj_caballero.yy",},},
     {"id":{"name":"obj_damage_number","path":"objects/obj_damage_number/obj_damage_number.yy",},},
     {"id":{"name":"Obj_demonio","path":"objects/Obj_demonio/Obj_demonio.yy",},},
+    {"id":{"name":"obj_dragon","path":"objects/obj_dragon/obj_dragon.yy",},},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},},
     {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_ojos","path":"objects/obj_ojos/obj_ojos.yy",},},
@@ -81,6 +82,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Level01","path":"rooms/Level01/Level01.yy",},},
+    {"roomId":{"name":"federico","path":"rooms/federico/federico.yy",},},
+    {"roomId":{"name":"testSala","path":"rooms/testSala/testSala.yy",},},
     {"roomId":{"name":"Pantalla_inicio","path":"rooms/Pantalla_inicio/Pantalla_inicio.yy",},},
     {"roomId":{"name":"Level01","path":"rooms/Level01/Level01.yy",},},
     {"roomId":{"name":"testpantalla_inicio","path":"rooms/testpantalla_inicio/testpantalla_inicio.yy",},},
