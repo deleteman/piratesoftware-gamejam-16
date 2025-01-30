@@ -66,6 +66,7 @@
     {"id":{"name":"FullTerrainTileSet","path":"sprites/FullTerrainTileSet/FullTerrainTileSet.yy",},},
     {"id":{"name":"ogro","path":"sprites/ogro/ogro.yy",},},
     {"id":{"name":"ojos","path":"sprites/ojos/ojos.yy",},},
+    {"id":{"name":"mostruo","path":"sprites/mostruo/mostruo.yy",},},
     {"id":{"name":"pantalla_de_carga","path":"sprites/pantalla_de_carga/pantalla_de_carga.yy",},},
     {"id":{"name":"pantalla_ganar","path":"sprites/pantalla_ganar/pantalla_ganar.yy",},},
     {"id":{"name":"pantalla_muerte","path":"sprites/pantalla_muerte/pantalla_muerte.yy",},},
