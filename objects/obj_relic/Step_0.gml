@@ -18,7 +18,7 @@ if (vertical_speed > max_fall_speed) {
 }
 
 // Check if there's a tile directly below the player
-var floor_below = place_meeting(x, y + 1, obj_terrain);
+var floor_below = collision_point(x, y + vertical_speed, obj_terrain, false, false);
 
 
 if (floor_below) {
@@ -32,11 +32,19 @@ if (floor_below) {
 }
 
 
-
-if (global.controlled_object == id) {
+switch(status) {
+	case "flickering": {
+			flicker_timer = game_get_speed(gamespeed_fps);
 	
-	var next_to_wall_right = place_meeting(x + 1, y-32, obj_terrain);
-	var next_to_wall_left = place_meeting(x -1,y-32, obj_terrain);
+			status = "inmune";
+		break;	
+	}
+}
+
+if (suelta) {
+	
+	var next_to_wall_right = collision_point(x + move_speed, y - 2, obj_terrain, false, false);
+	var next_to_wall_left = collision_point(x - move_speed,y - 2, obj_terrain, false, false);
 	
 	
 	
@@ -64,7 +72,7 @@ if (global.controlled_object == id) {
 } else { //si no estamos controlando a la espada directamente
 
 	// Initialize the animation speed (frames per step)
-	var animation_speed = 1; // Play all frames in 1 second
+	var animation_speed = 1; 
 
 	// Check if spacebar is pressed
 	if (keyboard_check_pressed(vk_enter)) { //attack!
@@ -80,5 +88,8 @@ if (global.controlled_object == id) {
 	}
 }
 	
-	
+if((vertical_speed > 0) or
+   (vertical_speed < 0 and !collision_point(x, y + vertical_speed, obj_terrain, false, false))
+){
 	y += vertical_speed;
+}	

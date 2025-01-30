@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ground",
-  "eventList":[],
+  "%Name":"obj_ojos",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_ground",
+  "name":"obj_ojos",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"obj_terrain",
-    "path":"objects/obj_terrain/obj_terrain.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,10 +28,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"sprt_rocas",
-    "path":"sprites/sprt_rocas/sprt_rocas.yy",
+    "name":"ojos",
+    "path":"sprites/ojos/ojos.yy",
   },
   "spriteMaskId":null,
   "visible":true,

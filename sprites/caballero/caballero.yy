@@ -26,7 +26,7 @@
   ],
   "name":"caballero",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":32,
-    "yorigin":64,
+    "yorigin":53,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

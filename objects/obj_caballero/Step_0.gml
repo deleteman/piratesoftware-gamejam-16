@@ -19,11 +19,11 @@ if(!controlled and on_ground) {
 	
 	switch(estado) {
 		case "patrol": {			
-			if(collision_point(x +1, y-hheight, obj_terrain, false, false) and direcction == 1) {
+			if(collision_point(x + move_speed, y-3, obj_terrain, false, false) and direcction == 1) {
 				direcction = 0;
 			}
 	
-			if(collision_point(x - 1, y - hheight, obj_terrain, false, false) and direcction == 0) {
+			if(collision_point(x - move_speed, y - 3, obj_terrain, false, false) and direcction == 0) {
 				direcction = 1;
 			}
 	

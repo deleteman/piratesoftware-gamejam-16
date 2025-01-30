@@ -1,4 +1,3 @@
-
 if (flicker_timer > 0) {
     if (floor(flicker_timer / flicker_interval) mod 2 == 0) {
         draw_set_color(c_red); // Flash red
@@ -7,9 +6,7 @@ if (flicker_timer > 0) {
     }
     flicker_timer--;
 } else {
-
-
-	draw_self();
-
+	if(status == "inmune") status = ""; //reset status
+    draw_self();
 }
-	
+
