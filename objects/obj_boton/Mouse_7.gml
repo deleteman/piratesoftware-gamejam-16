@@ -1,6 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-if texto == "Jugar"
+if texto == "Play"
 {
-  room_goto(testSala);
+  room_goto(Level01);
 }

@@ -5,7 +5,6 @@ var hwidth = sprite_width / 2;
 var hheight = sprite_height / 2;
 
 if(!controlled and on_ground) {
-	//show_debug_message("MOVING ALONE!");
 	
 	if direcction = 1{
 	  sprite_index = caballero;
@@ -37,6 +36,5 @@ if(!controlled and on_ground) {
 			break;
 		}
 	}
-	
 	
 }

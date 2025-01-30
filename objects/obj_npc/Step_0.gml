@@ -1,5 +1,4 @@
 
-
 if (attached_object != noone) {
     attached_object.x = x; // Keep the initial object attached to the NPC
     attached_object.y = y - sprite_height / 2; // Adjust for position
@@ -11,6 +10,17 @@ if (attached_object != noone) {
 }
 
 var hspd = keyboard_check(vk_left) - keyboard_check(vk_right);
+
+
+if(hspd == 1) {
+	image_xscale = -1;
+} 
+if(hspd == -1) {
+	image_xscale = 1;
+}
+
+var hwidth = sprite_width / 2;
+var hheight = sprite_height / 2;
 
 // Gravity
 if(!on_ground) {		
