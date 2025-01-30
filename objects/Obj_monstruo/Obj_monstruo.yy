@@ -1,19 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ground",
+  "%Name":"Obj_monstruo",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_ground",
+  "name":"Obj_monstruo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_terrain",
-    "path":"objects/obj_terrain/obj_terrain.yy",
+    "name":"obj_npc",
+    "path":"objects/obj_npc/obj_npc.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,10 +32,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"sprt_rocas",
-    "path":"sprites/sprt_rocas/sprt_rocas.yy",
+    "name":"mostruo",
+    "path":"sprites/mostruo/mostruo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

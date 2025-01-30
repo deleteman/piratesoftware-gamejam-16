@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_ground",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_pantalla_ganar",
+  "eventList":[],
   "managed":true,
-  "name":"obj_ground",
+  "name":"obj_pantalla_ganar",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"obj_terrain",
-    "path":"objects/obj_terrain/obj_terrain.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"sprt_rocas",
-    "path":"sprites/sprt_rocas/sprt_rocas.yy",
+    "name":"pantalla_ganar",
+    "path":"sprites/pantalla_ganar/pantalla_ganar.yy",
   },
   "spriteMaskId":null,
   "visible":true,
