@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"pantalla_ganar",
+    "path":"sprites/pantalla_ganar/pantalla_ganar.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
